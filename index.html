@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300..700&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+  <title>Ticket generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Form starts -->
+  <div class="logo"><img src="icons/logo-full.svg" alt="logo" /></div>
+  <img src="images/pattern-squiggly-line-bottom-desktop.svg" alt="" class="patterns" id="spirals-1" />
+
+  <img src="images/pattern-squiggly-line-top.svg" alt="" class="patterns" id="spirals-2" />
+
+  <img src="images/pattern-circle.svg" alt="" class="patterns" id="circle-pattern" />
+
+  <img src="images/pattern-lines.svg" alt="" class="patterns" id="line-pattern" />
+
+  <div class="title">
+    <h1 id="titleEl">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p id="subTitleEl">
+      Secure your spot at next year's biggest coding conference.
+    </p>
+  </div>
+  <div class="create-ticket-section">
+    <h3>Upload Avatar</h3>
+    <div class="create-section">
+      <label class="upload-section">
+        <div class="preview-image-conatiner">
+          <img src="icons/icon-upload.svg" alt="" width="50" id="preview-img" accept="image/*" />
+        </div>
+        <input type="file" accept="image/*" id="image-input" />
+        <p>Drag and drop or click to upload</p>
+        <div class="img-edit-btn-container">
+          <button class="edit-btn" id="del-img-btn">Remove Image</button>
+          <button class="edit-btn" id="change-img-btn">Change Image</button>
+        </div>
+      </label>
+    </div>
+    <div class="upload-guidelines">
+      <img src="icons/icon-info.svg" alt="info icon" />
+      <p>Upload you photot (JPG or PNG, max size: 500KB)</p>
+    </div>
+    <div class="input-section">
+      <h3>Full name</h3>
+      <input type="text" placeholder="Full name..." id="name-input" class="inputs" />
+    </div>
+    <div class="input-section">
+      <h3>Email address</h3>
+      <input type="text" placeholder="Type your e-mail..." id="email-input" class="inputs" />
+    </div>
+    <div class="input-section">
+      <h3>GitHub Username</h3>
+      <input type="text" placeholder="Username" id="github-username-input" class="inputs" />
+    </div>
+    <button id="generate-btn">Generate My Ticket</button>
+  </div>
+
+  <div class="ticket-section">
+    <div class="ticket-content">
+      <div class="ticket-info">
+        <div class="ticket-logo">
+          <img src="icons/logo-mark.svg" alt="logo" id="ticket-bg" />
+          <h1>Coding Conf</h1>
+        </div>
+        <p id="date-time">Jan 12 llll</p>
+      </div>
+      <div class="user-info">
+        <div class="profile-img">
+          <img src="icons/image-avatar.jpg" alt="avatar" id="profile-img-output" />
+        </div>
+        <div class="unser-details">
+          <h2 id="username-el">Jhone doe</h2>
+          <div class="git-info">
+            <img src="icons/icon-github.svg" alt="github icon" />
+            <p id="github-username-el">@SkylimitzDevz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="id-container">
+      <h3 id="ticket-id">#981237</h3>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    layout de 
+    <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    feito por
+    <a href="https://github.com/SkylimitzDevz/" target="_blank">Luis Manuel</a>.
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>
